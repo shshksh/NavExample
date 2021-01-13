@@ -16,7 +16,8 @@
             android:id="@+id/toolbar_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="?colorPrimary" />
+            android:background="?colorPrimary"
+            android:visibility="gone" />
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/nav_host_fragment"
@@ -31,6 +32,7 @@
             android:id="@+id/nav_bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             app:menu="@menu/menu_bottom_nav" />
     </LinearLayout>
 
