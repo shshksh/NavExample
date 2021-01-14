@@ -1,45 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/login_dest">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <fragment
-        android:id="@+id/login_dest"
-        android:name="com.shshksh.navexample.LoginFragment"
-        android:label="LoginFragment"
-        tools:layout="@layout/fragment_login">
-
-        <action
-            android:id="@+id/action_login_dest_to_home_dest"
-            app:destination="@id/home_dest"
-            app:popUpTo="@id/login_dest"
-            app:popUpToInclusive="true" />
-
-    </fragment>
-
-    <fragment
-        android:id="@+id/home_dest"
-        android:name="com.shshksh.navexample.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
-
-    <fragment
-        android:id="@+id/noti_dest"
-        android:name="com.shshksh.navexample.NotificationFragment"
-        android:label="fragment_notification"
-        tools:layout="@layout/fragment_notification" />
-
-    <fragment
-        android:id="@+id/info_dest"
-        android:name="com.shshksh.navexample.InformationFragment"
-        android:label="fragment_information"
-        tools:layout="@layout/fragment_information" />
-
-    <fragment
-        android:id="@+id/setting_dest"
-        android:name="com.shshksh.navexample.SettingFragment"
-        android:label="fragment_setting"
-        tools:layout="@layout/fragment_setting" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.shshksh.navexample.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
 
 </navigation>
