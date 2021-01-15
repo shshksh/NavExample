@@ -19,4 +19,6 @@
         android:name="com.shshksh.navexample.NotificationNextFragment"
         android:label="fragment_notificationnext"
         tools:layout="@layout/fragment_notificationnext" />
+    <include app:graph="@navigation/nav_setting" />
+    <include app:graph="@navigation/nav_info" />
 </navigation>

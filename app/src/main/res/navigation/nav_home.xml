@@ -5,6 +5,8 @@
     android:id="@+id/nav_home"
     app:startDestination="@id/homeFragment">
 
+    <include app:graph="@navigation/nav_setting" />
+
     <fragment
         android:id="@+id/homeFragment"
         android:name="com.shshksh.navexample.HomeFragment"
@@ -19,4 +21,5 @@
         android:name="com.shshksh.navexample.HomeNextFragment"
         android:label="fragment_homenext"
         tools:layout="@layout/fragment_homenext" />
+    <include app:graph="@navigation/nav_info" />
 </navigation>
