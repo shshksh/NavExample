@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_pager_first"
+    app:startDestination="@id/homeFirstFragmentImpl">
+
+    <fragment
+        android:id="@+id/homeFirstFragmentImpl"
+        android:name="com.shshksh.navexample.HomeFirstFragmentImpl"
+        android:label="fragment_homefirstimpl"
+        tools:layout="@layout/fragment_homefirstimpl">
+        <action
+            android:id="@+id/action_homeFirstFragmentImpl_to_homeFirstFragmentNext"
+            app:destination="@id/homeFirstFragmentNext" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFirstFragmentNext"
+        android:name="com.shshksh.navexample.HomeFirstFragmentNext"
+        android:label="HomeFirstFragmentNext"
+        tools:layout="@layout/fragment_homefirstnext" />
+</navigation>

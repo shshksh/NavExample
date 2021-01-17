@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         )
 
         controller.observe(this, { navController ->
+            setSupportActionBar(binding.toolbarTop)
             binding.toolbarTop.setupWithNavController(navController, appBarConfiguration)
             binding.navDrawer.setupWithNavController(navController)
         })

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayoutMediator
 import com.shshksh.navexample.databinding.FragmentHomeBinding
@@ -28,5 +29,15 @@ class HomeFragment : Fragment() {
         TabLayoutMediator(binding.layoutHomeTab, binding.pagerHome) { tab, position ->
             tab.text = "Tab ${position + 1} "
         }.attach()
+    }
+
+    override fun onResume() {
+//        (activity as AppCompatActivity).supportActionBar?.hide()
+        super.onResume()
+    }
+
+    override fun onStop() {
+//        (activity as AppCompatActivity).supportActionBar?.show()
+        super.onStop()
     }
 }
