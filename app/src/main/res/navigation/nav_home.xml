@@ -11,15 +11,6 @@
         android:id="@+id/homeFragment"
         android:name="com.shshksh.navexample.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
-        <action
-            android:id="@+id/action_homeFragment_to_homeNextFragment"
-            app:destination="@id/homeNextFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/homeNextFragment"
-        android:name="com.shshksh.navexample.HomeNextFragment"
-        android:label="fragment_homenext"
-        tools:layout="@layout/fragment_homenext" />
+        tools:layout="@layout/fragment_home" />
     <include app:graph="@navigation/nav_info" />
 </navigation>
